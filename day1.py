@@ -16,3 +16,5 @@ inventory = '''
 '''
 
 print(max([sum([int(j) for j in i.split('\n') if j != '']) for i in inventory.split('\n\n')]))
+
+print(sum(sorted([sum([int(j) for j in i.split('\n') if j != '']) for i in inventory.split('\n\n')], reverse=True)[:3]))
